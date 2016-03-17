@@ -1,14 +1,14 @@
-# Phoenix.Osc
+# Phoenix.OSC [![Build Status](https://travis-ci.org/zampino/phoenix_osc.svg?branch=master)](https://travis-ci.org/zampino/phoenix_osc)
 
 _broadcasts OSC messages to Phoenix Channels from UDP streams_
 
 ## Short Story Long
 
-After reading Mr.Armstrong's post [A Badass Way to Connect Programs Together](http://joearms.github.io/2016/01/28/A-Badass-Way-To-Connect-Programs-Together.html)
+After reading Mr. Armstrong's post [A Badass Way to Connect Programs Together](http://joearms.github.io/2016/01/28/A-Badass-Way-To-Connect-Programs-Together.html),
 I thought it would be nice to use
 [Open Sound Control](http://archive.cnmat.berkeley.edu/OpenSoundControl/OSC-spec.html) sensors and devices to control a Phoenix application.
 
-May I quote:
+May I quote?
 
 > OSC should be renamed OAC – Open Anything Control
 
@@ -22,7 +22,11 @@ add `phoenix_osc` to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
-  [{:phoenix_osc, "~> 0.1.0", github: "zampino/phoenix_osc"}]
+  [
+    {:phoenix, ...
+    {:phoenix_osc, "~> 0.1.0", github: "zampino/phoenix_osc"},
+    ...
+  ]
 end
 ```
 
@@ -49,3 +53,8 @@ Configure your device to emit OSC messages with an _address_ of the form `/topic
 ## Some Example
 
 _coming soon_
+
+
+## TODOS
+
+- [ ] device feedback (hard)
