@@ -1,9 +1,10 @@
 defmodule PhoenixOsc.Mixfile do
   use Mix.Project
+  @version "0.2.1"
 
   def project do
     [app: :phoenix_osc,
-     version: "0.1.0",
+     version: @version,
      elixir: "~> 1.2",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
@@ -27,6 +28,6 @@ defmodule PhoenixOsc.Mixfile do
   #
   # Type "mix help deps" for more examples and options
   defp deps do
-    [{:ex_osc, ">= 0.0.0", github: "zampino/ex_osc"}]
+    [{:ex_osc, ">= 0.0.0", github: "jwarwick/ex_osc"}]
   end
 end
