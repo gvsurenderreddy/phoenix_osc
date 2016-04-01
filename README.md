@@ -52,9 +52,11 @@ Configure your device to emit OSC messages with an _address_ of the form `/topic
 
 ## Some Example
 
-_coming soon_
+[Elm graphic signals](//github.com/zampino/livex) controlled with TouchOSC:
 
+![demo.png](demo.png)
+![spiro.png](spiro.png)
 
 ## TODOS
 
-- [ ] device feedback (hard)
+- [ ] device feedback
